@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nigeru Web - Cursos de Japonés</title>
-    <link rel="stylesheet" href="css/prueba.css" />
+    <link rel="stylesheet" href="prueba2.css" />
     <!-- Iconos de Font Awesome -->
     <link
       rel="stylesheet"
@@ -26,6 +26,27 @@
         <img src="/img/MountFuji_banner.jpg" alt="Monte Fuji" />
       </div>
     </header>
+<!-- Popup de Cookies -->
+<div id="cookie-banner" class="cookie-banner">
+  <p>Usamos cookies para mejorar tu experiencia y analizar el tráfico. Al continuar navegando aceptas nuestra <a href="politica-cookies.html">política de cookies</a>.</p>
+  <button id="accept-cookies">Aceptar</button>
+</div>
+
+<script>
+// Mostrar solo si no se han aceptado previamente
+document.addEventListener("DOMContentLoaded", function () {
+  if (!localStorage.getItem("cookiesAccepted")) {
+    document.getElementById("cookie-banner").style.display = "flex";
+  }
+
+  document.getElementById("accept-cookies").addEventListener("click", function () {
+    localStorage.setItem("cookiesAccepted", "true");
+    document.getElementById("cookie-banner").style.display = "none";
+  });
+});
+</script>
+
+
 
     <!-- Contenido principal de tu página iría aquí -->
 
