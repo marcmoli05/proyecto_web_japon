@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #FF7043;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+header nav {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.intro-text {
+    flex: 1;
+    padding-right: 1rem;
+    text-align: left;
+}
+
+.intro-image {
+    flex: 1;
+}
+
+.intro-image img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-arund;
+    margin-bottom: 2rem;
+}
+
+.review {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.review h3 {
+    color: #FF7043;
+}
+
+.button {
+    display: inline-block;
+    background-color: #FF7043;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.button:hover {
+    background-color: #e66434;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.cookies-page, .terms-page {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-page {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.students-image {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.students-image img {
+    max-width: 100%;
+    border-radius: 5px;
+}
