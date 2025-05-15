@@ -1,3 +1,4 @@
+/* Estilos Generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -62,7 +63,7 @@ header nav a:hover {
 
 .reviews {
     display: flex;
-    justify-content: space-arund;
+    justify-content: space-around;
     margin-bottom: 2rem;
 }
 
@@ -106,6 +107,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Estilos para páginas específicas */
 .cookies-page, .terms-page {
     text-align: left;
     max-width: 800px;
@@ -126,4 +128,48 @@ footer a:hover {
 .students-image img {
     max-width: 100%;
     border-radius: 5px;
+}
+
+/* Estilos específicos para las Páginas de Temario */
+.temario-page .main-content {
+    display: flex;
+    height: calc(100vh - 160px); /* Ajusta el tamaño restante después del header y footer */
+}
+
+.temario-page aside {
+    width: 20%;
+    background-color: #FFE0B2;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.temario-page aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.temario-page aside ul li {
+    margin-bottom: 1rem;
+}
+
+.temario-page aside ul li a {
+    text-decoration: none;
+    color: #FF7043;
+    font-weight: bold;
+}
+
+.temario-page aside ul li a:hover {
+    text-decoration: underline;
+}
+
+.temario-page .content-area {
+    flex: 1;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.temario-page .navigation-buttons {
+    text-align: center;
+    margin: 1rem 0;
 }
