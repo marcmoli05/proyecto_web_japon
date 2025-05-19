@@ -210,3 +210,66 @@ footer a:hover {
     height: 50%; /* Ajusta la altura del degradado */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFE0B2 100%);
 }
+
+/* Estilos formulario de contacto */
+.contact-page .container.contact-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    text-align: left;
+}
+
+.contact-page h1 {
+    color: #FF7043;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+    box-sizing: border-box;
+    background: #FAFAFA;
+    transition: border-color 0.2s;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form input[type="tel"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #FF7043;
+}
+
+.contact-form button.button {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    margin-top: 0.6rem;
+}
+
+@media (max-width: 600px) {
+    .contact-page .container.contact-container {
+        padding: 1rem;
+    }
+}
