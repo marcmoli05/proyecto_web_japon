@@ -1,9 +1,17 @@
 /* Estilos Generales */
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     line-height: 1.6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer {
@@ -86,6 +94,10 @@ header nav a:hover {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2rem;
+    border: none;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .button:hover {
@@ -107,33 +119,17 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Estilos para páginas específicas */
-.cookies-page, .terms-page {
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
+/* Estructura de las páginas tipo temario */
+.temario-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.about-page {
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.students-image {
-    margin-top: 2rem;
-    text-align: center;
-}
-
-.students-image img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-/* Estilos específicos para las Páginas de Temario */
 .temario-page .main-content {
     display: flex;
-    height: calc(100vh - 160px); /* Ajusta el tamaño restante después del header y footer */
+    flex: 1 0 auto;
+    min-height: 0;
 }
 
 .temario-page aside {
@@ -167,11 +163,56 @@ footer a:hover {
     flex: 1;
     padding: 2rem;
     box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
 }
 
 .temario-page .navigation-buttons {
     text-align: center;
-    margin: 1rem 0;
+    margin: 2rem 0 3.5rem 0; /* deja espacio para el footer */
+    z-index: 2;
+    position: relative;
+}
+
+/* Arreglo de footer para que no tape contenido */
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    background-color: #FF7043;
+    color: white;
+    text-align: center;
+    padding: 1rem 0 1.6rem 0;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+/* Responsive para aside y grid */
+@media (max-width: 900px) {
+    .temario-page .main-content {
+        flex-direction: column;
+    }
+    .temario-page aside {
+        width: 100%;
+        order: 2;
+    }
+    .temario-page .content-area {
+        order: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .temario-page .content-area,
+    .container {
+        padding: 1rem;
+    }
+    .temario-page aside {
+        padding: 0.5rem;
+    }
+    .temario-page .navigation-buttons {
+        margin: 1.5rem 0 5.5rem 0;
+    }
 }
 
 /* Estilos para la página de historia */
