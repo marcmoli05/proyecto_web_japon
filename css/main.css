@@ -41,39 +41,39 @@ header nav a {
 header nav a:hover {
     text-decoration: underline;
 }
-
-.indice {
-    padding: 2rem;
-    text-align: center;
-}
-
+/* Contenedor general */
 .container {
     padding: 2rem;
     text-align: left;
 }
+/* Estilos para Imagenes */
+.image {
+    flex: 1;
+}
 
-.intro-section {
+.image img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+/* Estilos para el inicio */
+.inicio {
+    padding: 2rem;
+    text-align: center;
+}
+
+.inicio-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
 }
 
-.intro-text {
+.inicio-text {
     flex: 1;
     padding-right: 1rem;
     text-align: left;
 }
-
-.intro-image {
-    flex: 1;
-}
-
-.intro-image img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
+/* Estilos para las reviews del inicio */
 .reviews {
     display: flex;
     justify-content: space-around;
@@ -90,7 +90,7 @@ header nav a:hover {
 .review h3 {
     color: #FF7043;
 }
-
+/* Boton de cursos */
 .button {
     display: inline-block;
     background-color: #FF7043;
@@ -100,13 +100,24 @@ header nav a:hover {
     border-radius: 5px;
     font-size: 1.2rem;
     border: none;
-    margin: 0 0.3rem;
     cursor: pointer;
-    transition: background-color 0.2s;
 }
 
 .button:hover {
     background-color: #e66434;
+}
+/* Pie de pagina */
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    background-color: #FF7043;
+    color: white;
+    text-align: center;
+    padding: 1rem 0 1.6rem 0;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    margin-top: auto;
 }
 
 footer a {
@@ -123,7 +134,6 @@ footer a img {
 footer a:hover {
     text-decoration: underline;
 }
-
 /* Estructura de las páginas tipo temario */
 .temario-page {
     min-height: 100vh;
@@ -131,10 +141,19 @@ footer a:hover {
     flex-direction: column;
 }
 
-.temario-page .main-content {
+.temario-page {
     display: flex;
     flex: 1 0 auto;
     min-height: 0;
+}
+
+.temario-image {
+    display: block; 
+    margin: 32px auto; 
+    max-width: 100%; 
+    width: 700px; 
+    height: auto;
+    border-radius: 5px;
 }
 
 .temario-page aside {
@@ -177,20 +196,6 @@ footer a:hover {
     margin: 2rem 0 3.5rem 0; /* deja espacio para el footer */
     z-index: 2;
     position: relative;
-}
-
-/* Arreglo de footer para que no tape contenido */
-footer {
-    flex-shrink: 0;
-    width: 100%;
-    background-color: #FF7043;
-    color: white;
-    text-align: center;
-    padding: 1rem 0 1.6rem 0;
-    position: relative;
-    z-index: 1;
-    box-sizing: border-box;
-    margin-top: auto;
 }
 
 /* Responsive para aside y grid */
@@ -336,7 +341,6 @@ footer {
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   max-width: 600px;
-  margin: 0 auto;
 }
 
 .kana-box {
@@ -367,4 +371,10 @@ footer {
 
 .empty {
   visibility: hidden;
+}
+/* Imagenes de Particulas */
+.page4-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover; /* Esto recorta la imagen para que llene el espacio sin deformarse */
 }
