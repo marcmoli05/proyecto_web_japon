@@ -378,3 +378,13 @@ footer a:hover {
   height: 150px;
   object-fit: cover; /* Esto recorta la imagen para que llene el espacio sin deformarse */
 }
+/* Estilo para tablas */
+table {
+    border-collapse: 
+    collapse; margin: 18px 0;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px 14px;
+}
+th { background: #f3f0fa; }
