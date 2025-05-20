@@ -282,3 +282,43 @@ footer a:hover {
         padding: 1rem;
     }
 }
+
+/* Tabla Hiragana/Katakana */
+
+.hiragana-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.kana-box {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.kana-box:hover {
+  background-color: #f0f8ff;
+}
+
+.kana-char {
+  font-size: 32px;
+  font-weight: bold;
+  display: block;
+  color: #2c3e50;
+}
+
+.romaji {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-top: 5px;
+}
+
+.empty {
+  visibility: hidden;
+}
