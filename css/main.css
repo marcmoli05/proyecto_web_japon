@@ -42,9 +42,14 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-.container {
+.indice {
     padding: 2rem;
     text-align: center;
+}
+
+.container {
+    padding: 2rem;
+    text-align: left;
 }
 
 .intro-section {
